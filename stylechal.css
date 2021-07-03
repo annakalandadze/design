@@ -1,0 +1,72 @@
+body {
+    background: burlywood;
+    font-family: sans-serif;
+    text-align: justify;
+}
+a:hover {
+    color: rgb(184, 70, 50);
+}
+#main {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-gap: 0.5vw;
+}
+.content {
+    font-size: 1.15em;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+#image-1 {
+	height: 300px;
+    margin: 0 30px 0px 30px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: left;
+    grid-gap: 50px 50px;
+}
+
+.grid-item {
+    width: 20vw;
+    height: 250px;
+    margin: 0 0 0 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.sidebar {
+    background: rgba(128, 197, 224, 5);
+    height: fit-content;
+}
+
+.post {
+    border: slateblue solid;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+.grid-item:hover {
+    transform: scale(1.15);
+}
+
+h2 {
+    animation-name: setsubs;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal; 
+}
+
+@keyframes setsubs {
+    0% {
+        color: black;
+    }
+    100% {
+        color: rgb(68, 0, 255);
+    }
+}
